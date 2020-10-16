@@ -60,25 +60,19 @@ document.addEventListener('DOMContentLoaded', function() {
       return error;
    }
 
-
    // добавление класса объекту
-
    function formAddError(input) {
       input.parentElement.classList.add ('_error');
       input.classList.add('_error');
    }
 
-
    // дудалаем класс объекту
-
    function formRemoveError(input) {
       input.parentElement.classList.remove('_error');
       input.classList.remove('_error');
    }
 
-
    // функция теста email
-
    function emailTest(input) {
       return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
    }  
